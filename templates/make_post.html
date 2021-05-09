@@ -1,0 +1,61 @@
+   
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+   <script src="static\js\main_script.js" async defer></script>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   </head>
+   <body>
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link h4 text-white" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h4 text-white" href="/posts">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4 text-white" href="/posts/new-blog">Write a new Blog</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <h1 class="text-white">Pilani Blogs</h1>
+          <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+       
+    <div class="container-fluid">
+        <h1>Posts</h1>
+        <form action="/posts" method="POST">
+            <div class="form-group" >
+              <label for="text">Title :</label>
+              <input type="text" class="form-control" id="posttitle" name="title" placeholder="Enter the title of the post" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="content">Content :</label>
+                <textarea class="form-control" id="postcontent" name="content" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="author">Author :</label>
+                <input type="text" class="form-control" id="postauthor" name="author" placeholder="Enter the name of the author" autocomplete="off">
+              </div>
+            <button type="submit" class="btn btn-primary">Post</button>
+          </form>
+        </div>
+   </body>
+   </html>
